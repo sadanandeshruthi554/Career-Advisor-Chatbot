@@ -4,7 +4,7 @@
 -------------------------------
 ### 🚀 Live Demo
 
-https://huggingface.co/spaces/SadanandeShruthi/career-advisor-chatbot
+- https://huggingface.co/spaces/SadanandeShruthi/career-advisor-chatbot
 -----------------------------------
 ### 📌 Features
 
@@ -36,25 +36,26 @@ career-advisor-chatbot/
 ### ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/your-username/career-advisor-chatbot.git
-cd career-advisor-chatbot
+- git clone https://github.com/your-username/career-advisor-chatbot.git
+- cd career-advisor-chatbot
 ------------------
 ### 2️⃣ Create virtual environment (optional but recommended)
 
-python -m venv venv
-venv\Scripts\activate   # For Windows
+- python -m venv venv
+- venv\Scripts\activate   # For Windows
 --------------
 ### 3️⃣ Install dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 --------------------
 ### 4️⃣ Set up environment variables
 
-Create a .env file in the root folder and add:
-GOOGLE_API_KEY=your_api_key_here
+- Create a .env file in the root folder and add:
+- GOOGLE_API_KEY=your_api_key_here
 ---------------------------
 ### 5️⃣ Run the application
-python app.py
+
+- python app.py
 -----------------------------
 ### 🧠 How It Works
 1. User enters a career-related question
@@ -62,3 +63,21 @@ python app.py
 3. The AI processes and generates a response
 4. The chatbot displays the response in real time
 -------------------------
+### 🚀 Deployment
+
+- This project is deployed using Hugging Face Spaces with Gradio.
+--------------
+### 📈 Future Improvements
+
+- Add user authentication
+- Store chat history
+- Improve UI/UX design
+- Add career recommendation system with datasets
+------------------------
+### 📄 License
+
+- This project is licensed under the MIT License.
+--------------
+### 🙋‍♀️ Author
+
+- Sadanande Shruthi
