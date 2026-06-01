@@ -1,9 +1,6 @@
 from google import genai
 import os
 import time
-from dotenv import load_dotenv
-
-load_dotenv()
 
 client = genai.Client(
     api_key=os.getenv("GOOGLE_API_KEY")
@@ -16,16 +13,13 @@ def get_response(prompt):
                 model="gemini-2.5-flash-lite",
                 contents=prompt
             )
-
             return response.text
 
         except Exception as e:
-            error_message = str(e)
-
-            if "503" in error_message:
+            if "503" in str(e):
                 time.sleep(5)
                 continue
 
-            return f"Error: {error_message}"
+            return f"Error: {str(e)}"
 
-    return "⚠️ Gemini is currently busy. Please try again after a few minutes."
+    return "⚠️ Gemini is currently busy. Please try again later."
