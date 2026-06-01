@@ -1,5 +1,5 @@
 import streamlit as st
-from backend.gemini_api import get_response
+from gemini_api import get_response
 
 st.set_page_config(page_title="Career Advisor Chatbot")
 
